@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plant Selling Website Form</title><br>
+	<style>
+        body{
+            text-align: center;
+    font-family:Brush Script MT;
+    font-size:30px;
+    background-image: url('https://th.bing.com/th/id/R.5ad0bab0b8f2b86c65d7f1bcec03a174?rik=XuWjd1QFUJERFw&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f121811-macro-plants-nature-succulents.jpg&ehk=kGC9r3ljnbYV1qVuSWAI%2fo8kjX1RIV9%2bHtbGeReLG0Y%3d&risl=&pid=ImgRaw&r=0');
+        }
+		form {
+			width: 500px;
+			margin: 0 auto;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		input[type="text"], select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+		}
+		input[type="submit"] {
+			background-color: #5cb85c;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
+		}
+		input[type="submit"]:hover {
+			background-color: #449d44;
+		}
+	</style>
+</head>
+<body>
+    <h1>Fill the details of your plant</h1>
+	<form action="xyz" method="post" >
+		<label for="plant-name">Plant Name</label>
+		<input type="text" id="plant-name" name="pname" required>	
+		<label for="plant-price">Price</label>
+		<input type="text" id="plant-price" name="pprice" required>
+		
+		<label for="plant-description">Description</label>
+		<textarea id="plant-description" name="pdes"></textarea><br><br>
+		
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
