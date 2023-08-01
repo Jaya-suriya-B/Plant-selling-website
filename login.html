@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+    background-image: url('https://st.depositphotos.com/2632165/4026/i/600/depositphotos_40264933-stock-photo-young-plant.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.container {
+    color:white;
+    text-align: center;
+    font-family:Brush Script MT;
+    font-size:30px;
+    
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1><br><br>
+        <form method="post" action="joori">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
